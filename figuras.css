@@ -1,97 +1,110 @@
-/*Font Family*/
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto+Mono:ital,wght@1,200&display=swap');
+:root{
+    --dark: #22223b;
+    --white: #edf2fb;
+    --open: "Open Sans", sans-serif;
+}
+
+*{
+    font-size: 10px;
+}
 
 body{
-    background-color: rgb(206, 232, 241);
+    background: var(--dark);
+    margin: 0;
+    font-family: var(--open);
 }
 
-h4{
+header{
+    width: 100%;
+}
+
+h1{
+    color: var(--white);
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 80px;
     text-align: center;
 }
 
-header h1{
-    font-size: 30px;
-    color: rgb(99, 98, 155);
-    font-style: oblique;
-    text-align: center;
-    font-family: 'Be Vietnam Pro', sans-serif;
-}
-
-h2{
-    padding: 5px;
-    font-size: 25px;
-    font-weight: 1100;
-    font-family: 'Shizuru', cursive;
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .figures{
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around ;
-    background-color: rgb(211, 238, 247);
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1, 1fr;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    margin-block-end: 100px;
 }
-
-button{
-    width: 80px;
-    height: 30px;
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-}
-
-label{
-    font-family: 'Be Vietnam Pro', sans-serif; ;
-    padding: 4px;
-    display: flex;
-    
-}
-
-input{
-    width: 100px;
-    height: 20px;
-    border-radius: 20px;
-}
-
 
 .figures-item{
-    width: 30%;
+    align-items: center;
+    display: inline-grid;
+    background-color: var(--white);
+    border: 8px solid #c1d3fe;
+    box-shadow: -8px 8px 0 0 #abc4ff;
+    justify-items: center;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+.figures-item h2{
+    font-size: 3rem;
+}
+
+.figures-item img{
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+.figures-item form{
+    align-content: center;
     display: flex;
     flex-direction: column;
-    padding: 2%;
-    padding-bottom: 2%;
+    gap: 5px;
+    margin-bottom: 30px;
 }
 
-.Ajustes{
+.figures-item form label{
+    align-self: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+}
+
+.figures-item form input{
+    padding: 4px 10px;
+    font-size: 1.4rem;
+}
+
+.figures-item form button{
+    background-color: #c1d3fe;
+    border: 2px solid #abc4ff;
+    font-size: 1.6rem;
+    padding: 5px 30px;
+}
+h3{
+    color: aliceblue;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    font-size: 1.2em;
 }
 
-@media screen and (max-width: 767px){
-    body{
-        width: 100%;
-    }
-
-    form{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .figures{
-        display: flex;
-        flex-direction: column;
-        align-items:center ;
+@media screen and (min-width: 660px){
+    h1{
+        font-size: 5rem; 
     }
     
-
-    div.Ajustes{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+    .figures{
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
     }
-
 }
