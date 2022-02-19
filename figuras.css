@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto+Mono:ital,wght@1,200&family=Shizuru&display=swap');
+
 :root{
     --dark: #22223b;
     --white: #edf2fb;
@@ -9,7 +11,7 @@
 }
 
 body{
-    background: var(--dark);
+    background:#e0934a2d;
     margin: 0;
     font-family: var(--open);
 }
@@ -19,13 +21,14 @@ header{
 }
 
 h1{
-    color: var(--white);
+    color: black;
     font-size: 3.5rem;
     letter-spacing: 5px;
     margin: 0;
     padding-top: 10px;
     margin-bottom: 80px;
     text-align: center;
+    font-family: 'Shizuru', cursive;
 }
 
 .container{
@@ -46,21 +49,17 @@ h1{
 .figures-item{
     align-items: center;
     display: inline-grid;
-    background-color: var(--white);
+    background-color: white;
     border: 8px solid #c1d3fe;
-    box-shadow: -8px 8px 0 0 #abc4ff;
     justify-items: center;
     padding-inline-start: 10px;
     padding-inline-end: 10px;
+    border-radius: 20px;
 }
 
 .figures-item h2{
     font-size: 3rem;
-}
-
-.figures-item img{
-    margin-bottom: 30px;
-    width: 100px;
+    font-family: 'Shizuru', cursive;
 }
 
 .figures-item form{
@@ -73,13 +72,14 @@ h1{
 
 .figures-item form label{
     align-self: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1.6rem;
 }
 
 .figures-item form input{
     padding: 4px 10px;
     font-size: 1.4rem;
+    border-radius: 10px;
 }
 
 .figures-item form button{
@@ -87,9 +87,12 @@ h1{
     border: 2px solid #abc4ff;
     font-size: 1.6rem;
     padding: 5px 30px;
+    border-radius: 2rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 h3{
-    color: aliceblue;
+    color: black;
+    font-family: 'Be Vietnam Pro', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
