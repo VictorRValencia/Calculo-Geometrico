@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto+Mono:ital,wght@1,200&family=Shizuru&display=swap');
+
+:root{
+    --dark: #22223b;
+    --white: #edf2fb;
+    --open: "Open Sans", sans-serif;
+}
+
+body{
+    background:#c951512d;
+    margin: 0;
+    font-family: var(--open);
+}
+header{
+    width: 100%;
+    text-align: center;
+}
+
+header h1{
+    color: brown;
+    font-family: 'Shizuru', cursive;
+    padding-bottom: 3rem;
+}
+
+section{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    grid-template-columns: 1, 1fr;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    margin-block-end: 100px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section form label{
+    align-self: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+section form input{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 4px 10px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+section form button{
+    background-color: #be7087;
+    border: 2px solid #b86c76;
+    font-size: 1.6rem;
+    padding: 5px 30px;
+    border-radius: 2rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    font-family: 'Shizuru', cursive;
+    color: black;
+    font-size: x-large;
+}
+
